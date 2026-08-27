@@ -225,9 +225,16 @@
   }
   .progress-dots span.done{ background: var(--gold-bright); transform: scale(1.2); }
 
-  @media (max-width:420px){
+  @media (max-width:480px){
+    :root{
+      --font-display: Arial, Helvetica, sans-serif;
+      --font-script: Arial, Helvetica, sans-serif;
+    }
     .stage{ padding: 1.8rem 1.2rem; }
     .search-area{ height: 220px; }
+    .eyebrow, h1, h2, .response-msg, .final-msg, .signature, .slot-word, .word-chip{
+      font-family: Arial, Helvetica, sans-serif !important;
+    }
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -259,7 +266,7 @@
   <!-- Screen 1: Nivel 1 -->
   <div class="screen" id="screen-1">
     <div class="eyebrow">Nivel 1 — La curiosidad</div>
-    <h2>Mi querida Licenciada Virginia 👀</h2>
+    <h2>Mi querida Licenciada 👀</h2>
     <p>Hay un corazón escondido en esta caja. Encuéntralo para continuar.</p>
     <div class="search-area" id="searchArea"></div>
     <div class="hint">Psst… míralo bien, no siempre está donde parece.</div>
@@ -302,7 +309,7 @@
   <div class="screen" id="screen-5">
     <div class="final-heart">💛</div>
     <h2>Has desbloqueado algo que quería decirte…</h2>
-    <div class="final-msg">"Tú y ese durazno es todo lo que está bien en esta vida, ojalá poder apretarlo de nuevo algún día. Gracias por existir."</div>
+    <div class="final-msg">"Tú y hice durazno es todo lo que está bien en esta vida, ojalá poder apretarlo de nuevo algún día. Gracias por existir."</div>
     <div class="signature">— con todo mi cariño</div>
   </div>
 
